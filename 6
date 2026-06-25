@@ -1,0 +1,9 @@
+input_word = input("Введите слово без заглавных букв: ")
+
+spis = list(input_word)
+spis_rev = spis[::-1]
+
+if spis == spis_rev:
+    print(f"Результат: Слово '{input_word}' — это палиндром")
+else:
+    print(f"Результат: Слово '{input_word}' — не палиндром")

@@ -1,0 +1,9 @@
+spis_input = input("Введите пять чисел через пробел (например, 5 3 8 1 4): ")
+spis = [int(item) for item in spis_input.split()]
+
+min_value = min(spis)
+min_index = spis.index(min_value)
+spis[0], spis[min_index] = spis[min_index], spis[0]
+
+print(f"Исходный список: {spis}")
+print(f"Список после обмена: {spis}")

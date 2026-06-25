@@ -1,0 +1,12 @@
+numbers_list = [10, 20, 30, 40, 50]
+search_value = int(input("Введите число для поиска: "))30
+is_found = False
+
+for i in range(len(numbers_list)):
+    if numbers_list[i] == search_value:
+        print(f"Число {search_value} найдено. Индекс: {i}")
+        is_found = True
+        break
+        
+if not is_found:
+    print("Нет такого числа")

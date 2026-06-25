@@ -1,0 +1,13 @@
+marks_list = [5, 4, 3, 5, 2, 5, 4, 3, 5, 5]
+
+fives_count = 0
+twos_count = 0
+
+for mark in marks_list:
+    if mark == 5:
+        fives_count += 1
+    elif mark == 2:
+        twos_count += 1
+
+print(f"Количество пятерок: {fives_count}")
+print(f"Количество двоек: {twos_count}")
